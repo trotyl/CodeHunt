@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_Arithmetic\01_15.cs" />
+    <Compile Include="02_Loops\02_01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="00_Training\" />
-    <Folder Include="02_Loops\" />
+    <Folder Include="01_Arithmetic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
