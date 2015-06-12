@@ -3,7 +3,7 @@ public class Program
 {
     public static string Puzzle(string a, string b)
     {
-        int x = a.Length, y = b.Length;
-        return x > y ? a : x < y ? b : a + b;
+        var rel = a.Length - b.Length;
+        return (rel >= 0 ? a : "") + (rel <= 0 ? b : "");
     }
 }
