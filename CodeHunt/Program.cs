@@ -10,8 +10,9 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            var result = global::Program.Puzzle(0);
-            Console.WriteLine(result);
+            var res = string.Join("", Enumerable.Repeat<char>('a', 5));
+            
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
