@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="06_Strings\06_12.cs" />
+    <Compile Include="07_Strings2\07_01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,6 +57,7 @@
     <Folder Include="03_Loops2\" />
     <Folder Include="04_Conditionals\" />
     <Folder Include="05_Conditionals2\" />
+    <Folder Include="06_Strings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
