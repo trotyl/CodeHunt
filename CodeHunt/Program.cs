@@ -10,20 +10,15 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(int.MaxValue);
-            Console.WriteLine(int.MinValue);
-            var t = 4394967296;
-            var input = new int[] { 1536835584, 268500992, -236443443, -2104172274, 847444531, -1902636430, 369174912 };
-            
+            var input = "a";
             var res = Puzzle(input);
             Console.WriteLine(res);
-            Array.Sort(input);
             Console.ReadKey();
         }
 
-        public static bool Puzzle(int[] numbers)
+        public static string Puzzle(string s)
         {
-            return numbers.Select(x => (int?)x).Aggregate((int?)int.MinValue, (o, x) => x != null && x >= o ? x : null) != null;
+            return new string(s.Select(x => (char)(x + 7 > 'z' ? x + 7 : x - 19)).ToArray());
         }
     }
 }
