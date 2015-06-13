@@ -11,7 +11,7 @@ namespace CodeHunt
         static void Main(string[] args)
         {
             var input = "a";
-            var res = Puzzle(input);
+            var res = new Func<char,char>[] { x=>x };
             Console.WriteLine("{0} {1} {2}",(int)('|'),(int)('}'),(int)('~'));
             Console.WriteLine(res);
             Console.ReadKey();
@@ -19,7 +19,10 @@ namespace CodeHunt
 
         public static string Puzzle(string s)
         {
-            return new string(s.Select(x => (char)(x + 7 > 'z' ? x + 7 : x - 19)).ToArray());
+            return new string(s.Select((x, i) => {
+                var map = new[] { 2, 3, 19, 19 };
+                return (char)((x + map[i % 4]) % 26 + 'a');
+            }).ToArray());
         }
     }
 }
