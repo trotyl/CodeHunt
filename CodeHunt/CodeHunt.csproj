@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11_Arrays2\11_07.cs" />
+    <Compile Include="12_Search_Sort\12_01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,6 +62,7 @@
     <Folder Include="08_Nested_Loops\" />
     <Folder Include="09_1D_Arrays\" />
     <Folder Include="10_Jagged_Arrays\" />
+    <Folder Include="11_Arrays2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
