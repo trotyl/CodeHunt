@@ -12,6 +12,7 @@ namespace CodeHunt
         {
             var input = "a";
             var res = Puzzle(input);
+            Console.WriteLine("{0} {1} {2}",(int)('|'),(int)('}'),(int)('~'));
             Console.WriteLine(res);
             Console.ReadKey();
         }
