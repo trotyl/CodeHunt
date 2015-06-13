@@ -17,7 +17,7 @@ namespace CodeHunt
             
             var res = Puzzle(input);
             Console.WriteLine(res);
-
+            Array.Sort(input);
             Console.ReadKey();
         }
 
