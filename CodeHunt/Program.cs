@@ -10,11 +10,15 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            var t = "123";
-            var k = "456";
-            var res = Enumerable.Repeat(Enumerable.Repeat(10, 10), 10).OrderByDescending(x => x.Sum()).First().ToArray();
+            var input = Enumerable.Repeat(Enumerable.Range(0, 10).ToArray(), 10).ToArray();
+            var sums = new int[input.Length];
+            var res = input.Select(x => 
+                x.Select((y, j) => {
+                    sums[j] += y;
+                    return y;
+                }));
+            Console.WriteLine(res.ToArray());
 
-            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
