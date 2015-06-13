@@ -11,6 +11,7 @@ namespace CodeHunt
         static void Main(string[] args)
         {
             var input = Enumerable.Repeat(Enumerable.Range(0, 10).ToArray(), 10).ToArray();
+            var arr = new int[5] { 1, 2, 3, 4, 5 };
             
 
             Console.ReadKey();
