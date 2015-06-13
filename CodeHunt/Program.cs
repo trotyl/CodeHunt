@@ -12,7 +12,7 @@ namespace CodeHunt
         {
             var t = "123";
             var k = "456";
-            var res = t.Select(x => "123").SelectMany(x => x).Max();
+            var res = Enumerable.Repeat(Enumerable.Repeat(10, 10), 10).OrderByDescending(x => x.Sum()).First().ToArray();
 
             Console.WriteLine(res);
             Console.ReadKey();
