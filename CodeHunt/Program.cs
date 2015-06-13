@@ -12,7 +12,7 @@ namespace CodeHunt
         {
             var t = "123";
             var k = "456";
-            var res = t.Select(x => "123").SelectMany(x => x).Count(c => c == ' ');
+            var res = t.Select(x => "123").SelectMany(x => x).Max();
 
             Console.WriteLine(res);
             Console.ReadKey();
