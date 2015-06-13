@@ -12,7 +12,7 @@ namespace CodeHunt
         {
             var t = "123";
             var k = "456";
-            var res = t.Select(x=>x).Concat(k.Select(x=>x));
+            var res = t.Select(x => x);
             Console.WriteLine(res);
             Console.ReadKey();
         }
