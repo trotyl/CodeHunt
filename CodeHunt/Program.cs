@@ -10,9 +10,8 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            var b = "#";
-            var n = 3;
-            var res = string.Join(" ", Enumerable.Repeat(new string(b[0], n), n).Select((x, i) => x.Substring(0, i) + b[0] + x.Substring(i + 1, x.Length - i - 1))); 
+            var t = "123";
+            var res = new string('_',0);
             Console.WriteLine(res);
             Console.ReadKey();
         }
