@@ -10,12 +10,20 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            var input = Enumerable.Repeat(Enumerable.Range(0, 10).ToArray(), 10).ToArray();
-            var arr = new int[5] { 1, 2, 3, 4, 5 };
-            var t = new HashSet<int>();
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+            var t = 4394967296;
+            var input = new int[] { 1536835584, 268500992, -236443443, -2104172274, 847444531, -1902636430, 369174912 };
             
+            var res = Puzzle(input);
+            Console.WriteLine(res);
 
             Console.ReadKey();
+        }
+
+        public static bool Puzzle(int[] numbers)
+        {
+            return numbers.Select(x => (int?)x).Aggregate((int?)int.MinValue, (o, x) => x != null && x >= o ? x : null) != null;
         }
     }
 }
