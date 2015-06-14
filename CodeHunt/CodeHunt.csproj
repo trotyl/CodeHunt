@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="13_Cyphers\13_04.cs" />
+    <Compile Include="14_Puzzles\14_01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +64,7 @@
     <Folder Include="10_Jagged_Arrays\" />
     <Folder Include="11_Arrays2\" />
     <Folder Include="12_Search_Sort\" />
+    <Folder Include="13_Cyphers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

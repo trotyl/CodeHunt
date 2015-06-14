@@ -10,7 +10,7 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            var input = "a";
+            Dictionary<int, int> dic = null;
             var res = new Func<char,char>[] { x=>x };
             Console.WriteLine("{0} {1} {2}",(int)('|'),(int)('}'),(int)('~'));
             Console.WriteLine(res);
