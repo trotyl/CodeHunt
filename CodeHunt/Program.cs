@@ -11,35 +11,12 @@ namespace CodeHunt
         static void Main(string[] args)
         {
 
-            var res = IsPrime(3);
-            Console.WriteLine("{0} {1} {2}",(int)('|'),(int)('}'),(int)('~'));
+            var res = Enumerable.Range(0, 10).Select((x, i) => new { Index = i, Value = x }).GroupBy(x => x.Index / 2).Select(x => (int)(x.ToArray().Average(t => t.Value))).ToArray();
+            Console.WriteLine("{0} {1} {2}", (int)('|'), (int)('}'), (int)('~'));
             Console.WriteLine(res);
             Console.ReadKey();
         }
 
-        private static bool IsPrime(int f)
-        {
-            if (f == 1)
-            {
-                return false;
-            }
-            if (f == 2)
-            {
-                return true;
-            }
-            if (f % 2 == 0)
-            {
-                return false;
-            }
-            var bount = (int)Math.Sqrt(f);
-            for (int i = 3; i <= f; i += 2)
-            {
-                if (f % i == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+
     }
 }
