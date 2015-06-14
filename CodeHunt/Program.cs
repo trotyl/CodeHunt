@@ -10,19 +10,36 @@ namespace CodeHunt
     {
         static void Main(string[] args)
         {
-            
-            var res = new Func<char,char>[] { x=>x };
+
+            var res = IsPrime(3);
             Console.WriteLine("{0} {1} {2}",(int)('|'),(int)('}'),(int)('~'));
             Console.WriteLine(res);
             Console.ReadKey();
         }
 
-        public static string Puzzle(string s)
+        private static bool IsPrime(int f)
         {
-            return new string(s.Select((x, i) => {
-                var map = new[] { 2, 3, 19, 19 };
-                return (char)((x + map[i % 4]) % 26 + 'a');
-            }).ToArray());
+            if (f == 1)
+            {
+                return false;
+            }
+            if (f == 2)
+            {
+                return true;
+            }
+            if (f % 2 == 0)
+            {
+                return false;
+            }
+            var bount = (int)Math.Sqrt(f);
+            for (int i = 3; i <= f; i += 2)
+            {
+                if (f % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
